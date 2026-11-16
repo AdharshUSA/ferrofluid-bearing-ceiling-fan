@@ -21,7 +21,7 @@ Conventional ferrofluid bearings hold the lubricant with permanent magnet rings.
 
 ## Design check
 
-Running conditions assumed for an average ceiling fan: 315 rpm, 8,000 hours of life (about 2 years at 10 hours a day), service factor 1.1.
+Running conditions assumed for an average ceiling fan: 315 rpm, 8,000 hours of life (about 2 years at 10 hours a day), service factor 1.1. Figures below are as given in the report.
 
 | | SKF 6202 (upper) | SKF 6201 (lower) |
 |---|---|---|
@@ -30,7 +30,9 @@ Running conditions assumed for an average ceiling fan: 315 rpm, 8,000 hours of l
 | Equivalent load P | 1,088.8 N | 975.0 N |
 | Required dynamic capacity | 5,792 N | 5,187 N |
 | Rated dynamic capacity C | 6,100 N | 5,400 N |
-| Result | Safe | Safe |
+| Result in the report | Safe | Safe |
+
+**Note on the axial load.** The report uses X = 1 and Y = 0, which treats the axial load as negligible (Fa/Fr ≤ e). At Fa/Co = 0.13, standard deep groove ball bearing tables give e of about 0.31, while Fa/Fr here is about 0.44. That would normally call for X = 0.56 and Y of about 1.4, which raises P to roughly 1,280 N (6202) and 1,150 N (6201) and the required dynamic capacity to about 6,800 N and 6,100 N. Those are above the ratings the report uses, so the "safe" result depends on the axial load assumption and on the catalogue rating chosen, and is worth re-checking against the manufacturer's tables.
 
 ## Simulation
 
@@ -49,7 +51,7 @@ About Rs 4,415 for a pair: Rs 955 of AISI 52100 bar, Rs 3,300 for 30 ml of ferro
 
 - The project covers design, analysis and a fabrication plan. The modified bearings were not built or tested in a running fan, so the lubrication, heat dissipation and sealing benefits listed in the conclusion are expected outcomes based on the literature, not measured results.
 - The structural simulations do not model the magnetic field or the ferrofluid itself.
-- The report assumes the axial load does not enter the equivalent load calculation (X = 1, Y = 0). Re-checking that assumption against the bearing tables is a worthwhile next step.
+- The bearing life check should be repeated with the axial load included (see the note above).
 
 ## Team
 
